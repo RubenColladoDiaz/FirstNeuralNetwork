@@ -10,8 +10,10 @@ fahrenheit = np.array([-40, 14, 32, 46, 59, 72, 100], dtype=float)
 # neuronas de la siguiente capa.
 # En nuestro ejemplo de transformar de celsius a fahrenheit solo tendremos
 # dos neuronas.
-capa = tf.keras.layers.Dense(units=1, input_shape=[1]) # 1 neurona, 1 entrada (Celsius)
-modelo = tf.keras.Sequential([capa]) # Las capas se apilarán una tras otra, en orden
+capa = tf.keras.layers.Dense(units=100, input_shape=[1]) # 1 neurona, 1 entrada (Celsius)
+capa2 = tf.keras.layers.Dense(units=100)
+capa3 = tf.keras.layers.Dense(units=1) # Solo 1 neurona en la salida = Solo queremos predecir un valor
+modelo = tf.keras.Sequential([capa,capa2,capa3]) # Las capas se apilarán una tras otra, en orden
 
 modelo.compile(
     optimizer = tf.keras.optimizers.Adam(0.1), # Tasa de aprendizaje 0.1
