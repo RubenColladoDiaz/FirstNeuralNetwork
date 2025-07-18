@@ -43,9 +43,9 @@ The script trains a neural network to learn the mathematical relationship betwee
 - The predicted Fahrenheit value for 100°C.
 - The internal weights of the trained model.
 
-## Author
+## Aprendido de tutorial
 
-Ruben Collado Diaz
+Ringa Tech - https://www.youtube.com/watch?v=iX_on3VxZzk
 
 ## License
 
